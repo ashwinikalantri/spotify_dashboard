@@ -72,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-00256e54252391abf5a6f21df86d809a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-94745a9faf94b5378c79bccb68b8a113.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-dashboard/quarto-dashboard.js"></script>
 <script src="site_libs/quarto-dashboard/stickythead.js"></script>
 <script src="site_libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
@@ -147,10 +147,712 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 35fr) minmax(3em, 65fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
 <p>Placeholder for col1</p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div id="qskzrgavps" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;" class="html-fill-item html-fill-container">
+<style>#qskzrgavps table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qskzrgavps thead, #qskzrgavps tbody, #qskzrgavps tfoot, #qskzrgavps tr, #qskzrgavps td, #qskzrgavps th {
+  border-style: none;
+}
+
+#qskzrgavps p {
+  margin: 0;
+  padding: 0;
+}
+
+#qskzrgavps .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #191414;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qskzrgavps .gt_title {
+  color: #FFFFFF;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #191414;
+  border-bottom-width: 0;
+}
+
+#qskzrgavps .gt_subtitle {
+  color: #FFFFFF;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #191414;
+  border-top-width: 0;
+}
+
+#qskzrgavps .gt_heading {
+  background-color: #191414;
+  text-align: center;
+  border-bottom-color: #191414;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qskzrgavps .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qskzrgavps .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qskzrgavps .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qskzrgavps .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qskzrgavps .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qskzrgavps .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qskzrgavps .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qskzrgavps .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qskzrgavps .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qskzrgavps .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qskzrgavps .gt_stub {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qskzrgavps .gt_stub_row_group {
+  color: #FFFFFF;
+  background-color: #191414;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qskzrgavps .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qskzrgavps .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qskzrgavps .gt_summary_row {
+  color: #FFFFFF;
+  background-color: #191414;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qskzrgavps .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qskzrgavps .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_grand_summary_row {
+  color: #FFFFFF;
+  background-color: #191414;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qskzrgavps .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qskzrgavps .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_footnotes {
+  color: #FFFFFF;
+  background-color: #191414;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qskzrgavps .gt_sourcenotes {
+  color: #FFFFFF;
+  background-color: #191414;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qskzrgavps .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qskzrgavps .gt_left {
+  text-align: left;
+}
+
+#qskzrgavps .gt_center {
+  text-align: center;
+}
+
+#qskzrgavps .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qskzrgavps .gt_font_normal {
+  font-weight: normal;
+}
+
+#qskzrgavps .gt_font_bold {
+  font-weight: bold;
+}
+
+#qskzrgavps .gt_font_italic {
+  font-style: italic;
+}
+
+#qskzrgavps .gt_super {
+  font-size: 65%;
+}
+
+#qskzrgavps .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qskzrgavps .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qskzrgavps .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qskzrgavps .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qskzrgavps .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qskzrgavps .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qskzrgavps .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qskzrgavps .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qskzrgavps div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings header">
+<th id="album_art" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Song</strong></th>
+<th id="song_name" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="artist_name" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Artist</strong></th>
+<th id="track_duration" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewbox="0 0 512 512">
+<path fill="#ffffff" d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path>
+</svg></th>
+<th id="popularity" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong>Popularity</strong></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b27337f65266754703fd20d29854" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Maan Meri Jaan</td>
+<td class="gt_row gt_left" headers="artist_name">King</td>
+<td class="gt_row gt_right" headers="track_duration">03:14</td>
+<td class="gt_row gt_right" headers="popularity">73</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2731c8193de8d62b2ffa49a09db" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Love You Like A Love Song</td>
+<td class="gt_row gt_left" headers="artist_name">Selena Gomez &amp; The Scene</td>
+<td class="gt_row gt_right" headers="track_duration">03:08</td>
+<td class="gt_row gt_right" headers="popularity">79</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2731a4f1ada93881da4ca8060ff" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Made You Look</td>
+<td class="gt_row gt_left" headers="artist_name">Meghan Trainor</td>
+<td class="gt_row gt_right" headers="track_duration">02:14</td>
+<td class="gt_row gt_right" headers="popularity">78</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b273e7df528549847deafd9c6a7e" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Feel the Thunder (The Croods: A New Age)</td>
+<td class="gt_row gt_left" headers="artist_name">Mark Mothersbaugh</td>
+<td class="gt_row gt_right" headers="track_duration">02:50</td>
+<td class="gt_row gt_right" headers="popularity">22</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2732e8fa5920192202646b28370" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Gypsy</td>
+<td class="gt_row gt_left" headers="artist_name">G.D. Kaur</td>
+<td class="gt_row gt_right" headers="track_duration">02:30</td>
+<td class="gt_row gt_right" headers="popularity">0</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2738b46921b586889dabff7ba3f" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Jiggle Jiggle (with Duke &amp; Jones)</td>
+<td class="gt_row gt_left" headers="artist_name">Louis Theroux</td>
+<td class="gt_row gt_right" headers="track_duration">01:37</td>
+<td class="gt_row gt_right" headers="popularity">57</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735161c380bfea9322a4ef067f" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Running Out Of Time</td>
+<td class="gt_row gt_left" headers="artist_name">Lin-Manuel Miranda</td>
+<td class="gt_row gt_right" headers="track_duration">02:14</td>
+<td class="gt_row gt_right" headers="popularity">48</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735161c380bfea9322a4ef067f" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Tough Crowd</td>
+<td class="gt_row gt_left" headers="artist_name">Lin-Manuel Miranda</td>
+<td class="gt_row gt_right" headers="track_duration">00:28</td>
+<td class="gt_row gt_right" headers="popularity">10</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735161c380bfea9322a4ef067f" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">My Own Drum</td>
+<td class="gt_row gt_left" headers="artist_name">Lin-Manuel Miranda</td>
+<td class="gt_row gt_right" headers="track_duration">02:22</td>
+<td class="gt_row gt_right" headers="popularity">46</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b273548910835dbfaf3f79a1dc46" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Lean On</td>
+<td class="gt_row gt_left" headers="artist_name">Major Lazer</td>
+<td class="gt_row gt_right" headers="track_duration">02:56</td>
+<td class="gt_row gt_right" headers="popularity">7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b273c6f7af36ecdc3ed6e0a1f169" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Dance Monkey</td>
+<td class="gt_row gt_left" headers="artist_name">Tones And I</td>
+<td class="gt_row gt_right" headers="track_duration">03:29</td>
+<td class="gt_row gt_right" headers="popularity">72</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2732a773e8798931e6ab067b0f8" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Bad Child</td>
+<td class="gt_row gt_left" headers="artist_name">Tones And I</td>
+<td class="gt_row gt_right" headers="track_duration">03:41</td>
+<td class="gt_row gt_right" headers="popularity">55</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735328d76e6a4483697744dee1" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Loyal Brave True - From "Mulan"</td>
+<td class="gt_row gt_left" headers="artist_name">Christina Aguilera</td>
+<td class="gt_row gt_right" headers="track_duration">02:46</td>
+<td class="gt_row gt_right" headers="popularity">49</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2732012e809cc6e9004474f96b0" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Let it Lie</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">05:12</td>
+<td class="gt_row gt_right" headers="popularity">31</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b27334ce9a9dde9c057225509276" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Girls Like You (feat. Cardi B) - Cardi B Version</td>
+<td class="gt_row gt_left" headers="artist_name">Maroon 5</td>
+<td class="gt_row gt_right" headers="track_duration">03:55</td>
+<td class="gt_row gt_right" headers="popularity">60</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b273bb8981af04f38a53e2be34f5" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Try Everything</td>
+<td class="gt_row gt_left" headers="artist_name">Michael Giacchino</td>
+<td class="gt_row gt_right" headers="track_duration">03:16</td>
+<td class="gt_row gt_right" headers="popularity">67</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2734fa16ce4d3cf85624dd4dd30" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">I Like To Move It</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">03:41</td>
+<td class="gt_row gt_right" headers="popularity">69</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735f4bc10ac6720c8eb15fb43f" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">DuckTales - From "DuckTales" / Extended Version</td>
+<td class="gt_row gt_left" headers="artist_name">Felicia Barton</td>
+<td class="gt_row gt_right" headers="track_duration">01:58</td>
+<td class="gt_row gt_right" headers="popularity">44</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b273b7e3147e73388bc3f3a44412" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">You're Welcome</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">02:43</td>
+<td class="gt_row gt_right" headers="popularity">44</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b273b7e3147e73388bc3f3a44412" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Shiny</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">03:05</td>
+<td class="gt_row gt_right" headers="popularity">37</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735db41540b10ff2ee3533abc1" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">When Will My Life Begin? - From "Tangled" / Soundtrack Version</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">02:31</td>
+<td class="gt_row gt_right" headers="popularity">42</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b273a985e1e7c6b095da213eaa7c" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Let It Go - From "Frozen"/Soundtrack Version</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">03:43</td>
+<td class="gt_row gt_right" headers="popularity">75</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Friend Like Me</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">02:35</td>
+<td class="gt_row gt_right" headers="popularity">65</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Prince Ali</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">03:29</td>
+<td class="gt_row gt_right" headers="popularity">61</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Speechless (Full)</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">03:28</td>
+<td class="gt_row gt_right" headers="popularity">66</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">A Whole New World</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">02:55</td>
+<td class="gt_row gt_right" headers="popularity">61</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735929af1edd645142df679910" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Into the Unknown</td>
+<td class="gt_row gt_left" headers="artist_name">Various Artists</td>
+<td class="gt_row gt_right" headers="track_duration">03:14</td>
+<td class="gt_row gt_right" headers="popularity">72</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2730dd170d60a89c5cbb8cb8bb3" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Live Your Life</td>
+<td class="gt_row gt_left" headers="artist_name">T.I.</td>
+<td class="gt_row gt_right" headers="track_duration">05:38</td>
+<td class="gt_row gt_right" headers="popularity">48</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Believer</td>
+<td class="gt_row gt_left" headers="artist_name">Imagine Dragons</td>
+<td class="gt_row gt_right" headers="track_duration">03:24</td>
+<td class="gt_row gt_right" headers="popularity">85</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b2734214ddc9e33e76de6a8ee888" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Waka Waka (Esto Es Africa) - K-Mix</td>
+<td class="gt_row gt_left" headers="artist_name">Shakira</td>
+<td class="gt_row gt_right" headers="track_duration">03:04</td>
+<td class="gt_row gt_right" headers="popularity">53</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="album_art"><img src="https://i.scdn.co/image/ab67616d0000b27337fb0680110fbb107740de5d" class="img-fluid" style="height:50px;"></td>
+<td class="gt_row gt_left" headers="song_name">Symphony (feat. Zara Larsson)</td>
+<td class="gt_row gt_left" headers="artist_name">Clean Bandit</td>
+<td class="gt_row gt_right" headers="track_duration">03:32</td>
+<td class="gt_row gt_right" headers="popularity">77</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -163,16 +865,16 @@ grid-auto-rows: minmax(0, 1fr);">
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb1" data-startfrom="74" data-source-offset="-48"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>top_hits <span class="op">=</span> <span class="fu">transpose</span>(playlist_ojs)</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a dropdown menu of the songs</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>viewof songDropdown <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>  top_hits<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span>)<span class="op">,</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a song"</span><span class="op">,</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb1" data-startfrom="103" data-source-offset="-48"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 102;"><span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>top_hits <span class="op">=</span> <span class="fu">transpose</span>(playlist_ojs)</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a dropdown menu of the songs</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>viewof songDropdown <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>  top_hits<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span>)<span class="op">,</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a song"</span><span class="op">,</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div class="html-fill-item html-fill-container">
 <div id="ojs-cell-1-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
@@ -194,15 +896,15 @@ grid-auto-rows: minmax(0, 1fr);">
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb2" data-startfrom="89" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 88;"><span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;iframe class="custom-iframe" style="border-radius:12px; display: flex; justify-content: center; align-items: center;" </span></span>
-<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="vs">  src=</span><span class="sc">${</span><span class="vs">`https://open.spotify.com/embed/track/</span><span class="sc">${</span>top_hits<span class="op">.</span><span class="fu">find</span>(song <span class="kw">=&gt;</span> song<span class="op">.</span><span class="at">song_name</span> <span class="op">===</span> songDropdown)<span class="op">.</span><span class="at">song_id</span><span class="sc">}</span><span class="vs">?utm_source=generator&amp;theme=0`</span><span class="sc">}</span><span class="vs"> </span></span>
-<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="vs">  width="100%" </span></span>
-<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="vs">  height="352" </span></span>
-<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="vs">  frameBorder="0" </span></span>
-<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="vs">  allowfullscreen="" </span></span>
-<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a><span class="vs">  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" </span></span>
-<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="vs">  loading="lazy"&gt;</span></span>
-<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/iframe&gt;`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb2" data-startfrom="118" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 117;"><span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;iframe class="custom-iframe" style="border-radius:12px; display: flex; justify-content: center; align-items: center;" </span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a><span class="vs">  src=</span><span class="sc">${</span><span class="vs">`https://open.spotify.com/embed/track/</span><span class="sc">${</span>top_hits<span class="op">.</span><span class="fu">find</span>(song <span class="kw">=&gt;</span> song<span class="op">.</span><span class="at">song_name</span> <span class="op">===</span> songDropdown)<span class="op">.</span><span class="at">song_id</span><span class="sc">}</span><span class="vs">?utm_source=generator&amp;theme=0`</span><span class="sc">}</span><span class="vs"> </span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a><span class="vs">  width="100%" </span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a><span class="vs">  height="352" </span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="vs">  frameBorder="0" </span></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a><span class="vs">  allowfullscreen="" </span></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a><span class="vs">  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" </span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="vs">  loading="lazy"&gt;</span></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/iframe&gt;`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display html-fill-item html-fill-container">
 <div id="ojs-cell-2" data-nodetype="expression" class="html-fill-item html-fill-container">
 
