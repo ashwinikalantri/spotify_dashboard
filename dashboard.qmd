@@ -15,6 +15,7 @@ Placeholder for col1
 #| include: false
 library(tidyverse)
 library(httr2)
+library(gt)
 ```
 
 ```{r, accesstoken}
@@ -56,6 +57,34 @@ playlist_df <- data.frame(
 )
 ```
 
+```{r, table}
+playlist_df %>% 
+  dplyr::select(album_art,song_name, artist_name, track_duration, popularity) %>% 
+  mutate(track_duration = track_duration/60000) %>% 
+  gt() %>% 
+  cols_label(
+    album_art = md("**Song**"),
+    song_name = "",
+    artist_name = md("**Artist**"),
+    track_duration = html('<svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 512 512"><path fill="#ffffff" d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>'),
+    popularity = md("**Popularity**")
+  ) %>% 
+  text_transform(
+    fn = function(x) {
+      web_image(url = x, height = 50)
+    },
+    locations = cells_body(columns = album_art)
+  ) %>% 
+  fmt_duration(columns = track_duration,
+               input_units = "minutes",
+               output_units = c("minutes", "seconds"),
+               duration_style = "colon-sep") %>% 
+  tab_options(
+    table.font.color = "white",
+    table.background.color = "#191414"
+  )
+
+```
 ## Column {width="65%"}
 
 ### Row {height="10%"}
