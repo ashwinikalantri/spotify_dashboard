@@ -26,6 +26,11 @@ head(starwars)
 
 Placeholder for col2, row1
 
+```{r}
+paste("My password :",Sys.getenv("password"))
+```
+
+
 ### Row {height="70%"}
 
 Placeholder for col2, row2
