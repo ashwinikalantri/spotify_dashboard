@@ -10,30 +10,93 @@ format:
 
 Placeholder for col1
 
-```{r, }
+```{r, loadpackages}
 #| echo: false
 #| include: false
 library(tidyverse)
+library(httr2)
 ```
 
-```{r, print}
-head(starwars)
+```{r, accesstoken}
+#| echo: false
+#| include: false
+client_id = Sys.getenv("spotify_client")
+client_secret = Sys.getenv("spotify_secret")
+
+req_access_token <- request("https://accounts.spotify.com/api/token") |>
+  req_method("POST") |>
+  req_body_raw(
+    paste0(
+      "grant_type=client_credentials&client_id=",
+      client_id,
+      "&client_secret=",
+      client_secret),
+      "application/x-www-form-urlencoded"
+  ) |>
+  req_perform() |>
+  resp_body_json()
+
+spotify_access_token <- req_access_token$access_token
+```
+
+```{r, spotifyplaylist}
+playlist <- request("https://api.spotify.com/v1/playlists/6bxc68SmD0XJ9tyPXDLnFq") |>
+  req_method("GET") |>
+  req_headers(Authorization = paste0("Bearer ", spotify_access_token)) |>
+  req_perform() |>
+  resp_body_json()
+
+playlist_df <- data.frame(
+  song_name = unlist(lapply(playlist$tracks$items, FUN = function(x) {x$track$name})),
+  song_id = unlist(lapply(playlist$tracks$items, FUN = function(x) {x$track$id})),
+  artist_name = unlist(lapply(playlist$tracks$items, FUN = function(item) {item$track$album$artists[[1]]$name})),
+  album_art = unlist(lapply(playlist$tracks$items,FUN = function(item) {item$track$album$images[[1]]$url})),
+  track_duration = unlist(lapply(playlist$tracks$items, FUN = function(item) {item$track$duration_ms})),
+  popularity = unlist(lapply(playlist$tracks$items, FUN = function (item) {item$track$popularity}))
+)
 ```
 
 ## Column {width="65%"}
 
 ### Row {height="10%"}
 
-Placeholder for col2, row1
 
-```{r}
-paste("My password :",Sys.getenv("password"))
+```{r, sendtoojs}
+#| echo: false
+#| include: false
+ojs_define(playlist_ojs = playlist_df)
 ```
 
+```{ojs}
+//| expandable: false
+
+// Tranpose the data to  make it usable in ojs
+top_hits = transpose(playlist_ojs)
+
+// Create a dropdown menu of the songs
+viewof songDropdown = Inputs.select(
+  top_hits.map(d => d.song_name),
+  {
+    label: "Choose a song",
+    unique: true
+  }
+)
+```
 
 ### Row {height="70%"}
 
-Placeholder for col2, row2
+```{ojs}
+//| expandable: false
+html`<iframe class="custom-iframe" style="border-radius:12px; display: flex; justify-content: center; align-items: center;" 
+  src=${`https://open.spotify.com/embed/track/${top_hits.find(song => song.song_name === songDropdown).song_id}?utm_source=generator&theme=0`} 
+  width="100%" 
+  height="352" 
+  frameBorder="0" 
+  allowfullscreen="" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy">
+</iframe>`
+```
 
 ### Row {height="20%"}
 
