@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -74,6 +108,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script type="ojs-define">
+{"contents":[{"name":"playlist_ojs","value":{"song_name":["Maan Meri Jaan","Love You Like A Love Song","Made You Look","Feel the Thunder (The Croods: A New Age)","Gypsy","Jiggle Jiggle (with Duke & Jones)","Running Out Of Time","Tough Crowd","My Own Drum","Lean On","Dance Monkey","Bad Child","Loyal Brave True - From \"Mulan\"","Let it Lie","Girls Like You (feat. Cardi B) - Cardi B Version","Try Everything","I Like To Move It","DuckTales - From \"DuckTales\" / Extended Version","You're Welcome","Shiny","When Will My Life Begin? - From \"Tangled\" / Soundtrack Version","Let It Go - From \"Frozen\"/Soundtrack Version","Friend Like Me","Prince Ali","Speechless (Full)","A Whole New World","Into the Unknown","Live Your Life","Believer","Waka Waka (Esto Es Africa) - K-Mix","Symphony (feat. Zara Larsson)"],"song_id":["1418IuVKQPTYqt7QNJ9RXN","0laYHRpNTS6i8FXdupHkJ4","0QHEIqNKsMoOY5urbzN48u","4qKLJUX5N14OJnmgcNG4cy","0twaTHqMG7xYjX2zHyfjDy","1I4lCSP69P74nU3a6Su5L2","6ZYv8ozQzQr1ClAe8dnUZN","7oy3ZkpdCgbGHhYtVSBEDA","2FmFDDnB387rOvN3hpcXuc","1Lim1Py7xBgbAkAys3AGAG","2XU0oxnq2qxCpomAAuJY8K","1qCmZnC1FUpNgOydIzqIPC","3gy8PSkBSyvPyWZazgQn0F","1GeYuHgJdZZAFZ7r8S7VXf","6FRLCMO5TUHTexlWo8ym1W","1N3dZ7TTWO6VcD4Y3hHYLZ","4bAFo6r2ODMDoqM5YHV2gM","7i45i2jjT1FYZNlLPYE6oc","5frDSkLEcCJjQSdvUB2JG8","67lV756pwR1Folwf3Kd6d0","3HoMLZMs2Fn9HuYOIzhGqt","0qcr5FMsEO85NAQjrlDRKo","5f2TWu6R2YYCJtLQ0fP78H","1Pt2STlAgfB1CiEV8mf3CN","0XPsOSYzDJZJArevQNm2AR","5viFjDGTnrApmUY5c8qkfw","3Z0oQ8r78OUaHvGPiDBR3W","6jKeXDUCImQkNdwKJviCPw","0pqnGHJpmpxLKifKRmU6WP","4DRFIoachXrW8YV7Yje0yz","72gv4zhNvRVdQA0eOenCal"],"artist_name":["King","Selena Gomez & The Scene","Meghan Trainor","Mark Mothersbaugh","G.D. Kaur","Louis Theroux","Lin-Manuel Miranda","Lin-Manuel Miranda","Lin-Manuel Miranda","Major Lazer","Tones And I","Tones And I","Christina Aguilera","Various Artists","Maroon 5","Michael Giacchino","Various Artists","Felicia Barton","Various Artists","Various Artists","Various Artists","Various Artists","Various Artists","Various Artists","Various Artists","Various Artists","Various Artists","T.I.","Imagine Dragons","Shakira","Clean Bandit"],"album_art":["https://i.scdn.co/image/ab67616d0000b27337f65266754703fd20d29854","https://i.scdn.co/image/ab67616d0000b2731c8193de8d62b2ffa49a09db","https://i.scdn.co/image/ab67616d0000b2731a4f1ada93881da4ca8060ff","https://i.scdn.co/image/ab67616d0000b273e7df528549847deafd9c6a7e","https://i.scdn.co/image/ab67616d0000b2732e8fa5920192202646b28370","https://i.scdn.co/image/ab67616d0000b2738b46921b586889dabff7ba3f","https://i.scdn.co/image/ab67616d0000b2735161c380bfea9322a4ef067f","https://i.scdn.co/image/ab67616d0000b2735161c380bfea9322a4ef067f","https://i.scdn.co/image/ab67616d0000b2735161c380bfea9322a4ef067f","https://i.scdn.co/image/ab67616d0000b273548910835dbfaf3f79a1dc46","https://i.scdn.co/image/ab67616d0000b273c6f7af36ecdc3ed6e0a1f169","https://i.scdn.co/image/ab67616d0000b2732a773e8798931e6ab067b0f8","https://i.scdn.co/image/ab67616d0000b2735328d76e6a4483697744dee1","https://i.scdn.co/image/ab67616d0000b2732012e809cc6e9004474f96b0","https://i.scdn.co/image/ab67616d0000b27334ce9a9dde9c057225509276","https://i.scdn.co/image/ab67616d0000b273bb8981af04f38a53e2be34f5","https://i.scdn.co/image/ab67616d0000b2734fa16ce4d3cf85624dd4dd30","https://i.scdn.co/image/ab67616d0000b2735f4bc10ac6720c8eb15fb43f","https://i.scdn.co/image/ab67616d0000b273b7e3147e73388bc3f3a44412","https://i.scdn.co/image/ab67616d0000b273b7e3147e73388bc3f3a44412","https://i.scdn.co/image/ab67616d0000b2735db41540b10ff2ee3533abc1","https://i.scdn.co/image/ab67616d0000b273a985e1e7c6b095da213eaa7c","https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032","https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032","https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032","https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032","https://i.scdn.co/image/ab67616d0000b2735929af1edd645142df679910","https://i.scdn.co/image/ab67616d0000b2730dd170d60a89c5cbb8cb8bb3","https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a","https://i.scdn.co/image/ab67616d0000b2734214ddc9e33e76de6a8ee888","https://i.scdn.co/image/ab67616d0000b27337fb0680110fbb107740de5d"],"track_duration":[194653,188453,134256,170783,150588,97208,134835,28743,142388,176561,209438,221466,166199,312986,235545,196853,221466,118054,163893,185466,151293,223840,155531,209666,208800,175593,194848,338853,204346,184120,212733],"popularity":[73,79,78,22,0,57,48,10,46,7,72,55,49,31,60,67,69,44,44,37,42,75,65,61,66,61,72,48,85,53,77]}}]}
+</script>
 
 
 </head>
@@ -108,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 35fr) minmax(3em, 65fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
 <p>Placeholder for col1</p>
@@ -119,65 +158,58 @@ grid-auto-rows: minmax(0, 1fr);">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
-<pre><code># A tibble: 6 × 14
-  name      height  mass hair_color skin_color eye_color birth_year sex   gender
-  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; 
-1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…
-2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…
-3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…
-4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…
-5 Leia Org…    150    49 brown      light      brown           19   fema… femin…
-6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…
-# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,
-#   vehicles &lt;list&gt;, starships &lt;list&gt;</code></pre>
-</div>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 10fr) minmax(3em, 70fr) minmax(3em, 20fr); grid-auto-columns: minmax(0, 1fr);">
-<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<p>Placeholder for col2, row1</p>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb1" data-startfrom="74" data-source-offset="-48"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 73;"><span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>top_hits <span class="op">=</span> <span class="fu">transpose</span>(playlist_ojs)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a dropdown menu of the songs</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>viewof songDropdown <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>  top_hits<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">song_name</span>)<span class="op">,</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">"Choose a song"</span><span class="op">,</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unique</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-1-1" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
-<pre><code>[1] "My password : gh_password123"</code></pre>
 </div>
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div id="ojs-cell-1-2" data-nodetype="declaration" class="html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div class="card bslib-card html-fill-container" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()">
 <div class="card-body html-fill-item html-fill-container">
-<p>Placeholder for col2, row2</p>
+<div class="sourceCode cell-code hidden html-fill-item html-fill-container" id="cb2" data-startfrom="89" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 88;"><span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;iframe class="custom-iframe" style="border-radius:12px; display: flex; justify-content: center; align-items: center;" </span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a><span class="vs">  src=</span><span class="sc">${</span><span class="vs">`https://open.spotify.com/embed/track/</span><span class="sc">${</span>top_hits<span class="op">.</span><span class="fu">find</span>(song <span class="kw">=&gt;</span> song<span class="op">.</span><span class="at">song_name</span> <span class="op">===</span> songDropdown)<span class="op">.</span><span class="at">song_id</span><span class="sc">}</span><span class="vs">?utm_source=generator&amp;theme=0`</span><span class="sc">}</span><span class="vs"> </span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="vs">  width="100%" </span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a><span class="vs">  height="352" </span></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a><span class="vs">  frameBorder="0" </span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="vs">  allowfullscreen="" </span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a><span class="vs">  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" </span></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a><span class="vs">  loading="lazy"&gt;</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/iframe&gt;`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display html-fill-item html-fill-container">
+<div id="ojs-cell-2" data-nodetype="expression" class="html-fill-item html-fill-container">
+
 </div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 <div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
@@ -198,6 +230,17 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuLy8gVHJhbnBvc2UgdGhlIGRhdGEgdG8gIG1ha2UgaXQgdXNhYmxlIGluIG9qc1xudG9wX2hpdHMgPSB0cmFuc3Bvc2UocGxheWxpc3Rfb2pzKVxuXG4vLyBDcmVhdGUgYSBkcm9wZG93biBtZW51IG9mIHRoZSBzb25nc1xudmlld29mIHNvbmdEcm9wZG93biA9IElucHV0cy5zZWxlY3QoXG4gIHRvcF9oaXRzLm1hcChkID0+IGQuc29uZ19uYW1lKSxcbiAge1xuICAgIGxhYmVsOiBcIkNob29zZSBhIHNvbmdcIixcbiAgICB1bmlxdWU6IHRydWVcbiAgfVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaHRtbGA8aWZyYW1lIGNsYXNzPVwiY3VzdG9tLWlmcmFtZVwiIHN0eWxlPVwiYm9yZGVyLXJhZGl1czoxMnB4OyBkaXNwbGF5OiBmbGV4OyBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgYWxpZ24taXRlbXM6IGNlbnRlcjtcIiBcbiAgc3JjPSR7YGh0dHBzOi8vb3Blbi5zcG90aWZ5LmNvbS9lbWJlZC90cmFjay8ke3RvcF9oaXRzLmZpbmQoc29uZyA9PiBzb25nLnNvbmdfbmFtZSA9PT0gc29uZ0Ryb3Bkb3duKS5zb25nX2lkfT91dG1fc291cmNlPWdlbmVyYXRvciZ0aGVtZT0wYH0gXG4gIHdpZHRoPVwiMTAwJVwiIFxuICBoZWlnaHQ9XCIzNTJcIiBcbiAgZnJhbWVCb3JkZXI9XCIwXCIgXG4gIGFsbG93ZnVsbHNjcmVlbj1cIlwiIFxuICBhbGxvdz1cImF1dG9wbGF5OyBjbGlwYm9hcmQtd3JpdGU7IGVuY3J5cHRlZC1tZWRpYTsgZnVsbHNjcmVlbjsgcGljdHVyZS1pbi1waWN0dXJlXCIgXG4gIGxvYWRpbmc9XCJsYXp5XCI+XG48L2lmcmFtZT5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NvbmdEcm9wZG93bicpIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
